@@ -22,7 +22,7 @@ export const StyledCharactersSection = styled("section", {
       lineHeight: '3.5rem',
       color: '$white',
       maxWidth: '21.6rem',
-      marginLeft: 16,
+      paddingLeft: 16,
       '&:before': {
         content: '',
         position: 'absolute',
