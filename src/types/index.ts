@@ -3,3 +3,9 @@ export type SocialType = {
   url: string;
   icon: any;
 }
+
+export type CardCharacterProps = {
+  name: string;
+  image: any;
+  slug: string;
+}
