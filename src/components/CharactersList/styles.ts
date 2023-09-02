@@ -1,7 +1,7 @@
 import { styled } from "@/styles";
 
 export const StyledCharactersSection = styled("section", {
-  paddintTop: 56,
+  paddingTop: 56,
   paddingBottom: 72,
   '.title': {
     display: 'flex',

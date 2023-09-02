@@ -36,6 +36,11 @@ const characters: CardCharacterProps[] = [
     name: 'Killmonger',
     image: ImageCharacter,
     slug: '/killmonger'
+  },
+  {
+    name: 'Killmonger',
+    image: ImageCharacter,
+    slug: '/killmonger'
   }
 ];
 
