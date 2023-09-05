@@ -15,5 +15,10 @@ export const { styled, globalCss, keyframes, theme, getCssText } = createStitche
       gray300: '#C6C5CE',
       gray200: '#E1E0E7',
     }
+  },
+  media: {
+    desktop: "(max-width: 1200px)",
+    tablet: "(max-width: 991px)",
+    mobile: "(max-width: 600px)",
   }
 })
