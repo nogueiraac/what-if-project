@@ -9,3 +9,8 @@ export type CardCharacterProps = {
   image: any;
   slug: string;
 }
+
+export type PageTitleProps = {
+  title: string;
+  description: string;
+}
