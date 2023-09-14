@@ -4,15 +4,15 @@
 
 Este é um projeto de projeto para a série "What If...?" da Marvel, desenvolvido com Next.js, Stitches para estilização, Prismic para gerenciamento de conteúdo e TypeScript. Este projeto faz parte do meu portfólio pessoal e destina-se a demonstrar minhas habilidades de desenvolvimento web.
 
-**Link para o projeto em produção**: [What If...? Promo projeto](https://what-if-project.vercel.app/)
+**Link para o projeto em produção**: [Projeto What If...?](https://what-if-project.vercel.app/)
 
 ## Visão Geral
 
-O objetivo deste projeto é criar um projeto envolvente que forneça informações sobre a série "What If...?", trailers, imagens e uma experiência interativa para os fãs. Queremos compartilhar nossa paixão pela série e explorar os mundos alternativos e as histórias fascinantes que ela apresenta.
+O objetivo deste projeto é criar um projeto envolvente que forneça informações sobre a série "What If...?".
 
 ## Requisição de Personagens e Conteúdo
 
-Para proporcionar aos visitantes uma experiência envolvente, o projeto utiliza o Prismic para gerenciamento de conteúdo. Isso nos permite recuperar dinamicamente informações sobre personagens, histórias alternativas e outros detalhes relacionados à série diretamente de uma fonte de conteúdo centralizada.
+Para proporcionar aos visitantes uma experiência envolvente, o projeto utiliza o Prismic para gerenciamento de conteúdo. Isso nos permite recuperar dinamicamente informações sobre personagens e outros detalhes relacionados à série diretamente de uma fonte de conteúdo centralizada.
 
 Aqui está como lidamos com a requisição de personagens e conteúdo:
 
