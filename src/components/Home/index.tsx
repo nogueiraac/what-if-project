@@ -21,7 +21,7 @@ const socials: SocialType[] = [
   }
 ]
 
-export function SectionHero() {
+export function SectionHero({ data }: any) {
   return (
     <SectionHeroStyled>
       <Container>
@@ -40,16 +40,16 @@ export function SectionHero() {
         </AreaSocial>
         <ContentText>
           <div className="left">
-            <h3>COMING SOON</h3>
-            <h1>Marvel WHAT IF</h1>
+            <h3>{data.subtitle_hero}</h3>
+            <h1>{data.title_hero}</h1>
             <p>
-            Disponível no Disney+, What If… ? é uma série de animação que leva o público para um terreno desconhecido ao contar, de forma alternativa, momentos cruciais do Universo Cinematográfico Marvel, imaginando o que teria acontecido aos super-heróis se a história fosse totalmente diferente e se passasse em outra realidade.
+              {data.description_hero[0].text}
             </p>
-            <Link href="#" target="_blank">
-              Saiba mais
+            <Link href={data.url_button.url} target="_blank">
+              {data.label_button}
             </Link>
           </div>
-          <PopupVideo />
+          <PopupVideo label={data.label_trailer} thumb={data.thumbnail_trailer.url} />
         </ContentText>
       </Container>
     </SectionHeroStyled>

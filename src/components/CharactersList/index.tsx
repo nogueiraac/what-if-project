@@ -6,45 +6,8 @@ import { CardCharacter } from "../CardCharacter";
 import { CardCharacterProps } from "@/types";
 import Image from "next/image";
 
-const characters: CardCharacterProps[] = [
-  {
-    name: 'Killmonger',
-    image: ImageCharacter,
-    slug: '/killmonger'
-  },
-  {
-    name: 'Killmonger',
-    image: ImageCharacter,
-    slug: '/killmonger'
-  },
-  {
-    name: 'Killmonger',
-    image: ImageCharacter,
-    slug: '/killmonger'
-  },
-  {
-    name: 'Killmonger',
-    image: ImageCharacter,
-    slug: '/killmonger'
-  },
-  {
-    name: 'Killmonger',
-    image: ImageCharacter,
-    slug: '/killmonger'
-  },
-  {
-    name: 'Killmonger',
-    image: ImageCharacter,
-    slug: '/killmonger'
-  },
-  {
-    name: 'Killmonger',
-    image: ImageCharacter,
-    slug: '/killmonger'
-  }
-];
+export function SectionCharactersList({characters}: any) {
 
-export function SectionCharactersList() {
   return(
     <StyledCharactersSection>
       <Container>
@@ -58,8 +21,8 @@ export function SectionCharactersList() {
         </div>
         <StyledListCharacters>
           {
-            characters.map((character: CardCharacterProps) => (
-              <CardCharacter key={character.name} name={character.name} image={character.image} slug={character.slug} />
+            characters.map((character: any) => (
+              <CardCharacter key={character.data.name_character} name={character.data.name_character} image={character.data.image_character.url} slug={character.data.slug} />
             ))
           }
           <div className="marvel">

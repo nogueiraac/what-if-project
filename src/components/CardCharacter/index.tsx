@@ -5,6 +5,9 @@ import { CardCharacterProps } from "@/types";
 
 export function CardCharacter(props: CardCharacterProps) {
   const { name, image, slug } = props;
+
+  console.log('slug', slug);
+
   return (
     <StyledCardCharacter>
       <Link href={`/character/${slug}`}>

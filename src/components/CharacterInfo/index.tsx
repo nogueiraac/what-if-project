@@ -4,23 +4,23 @@ import { StyledSectionCharacter } from "./styles";
 import ImageCharacter from '@/assets/character.jpg';
 import Image from "next/image";
 
-export function SectionHeroCharacter() {
+export function SectionHeroCharacter({character}: any) {
   return (
     <StyledSectionCharacter>
       <Container>
         <div className="image">
-          <Image src={ImageCharacter} alt='Character Image' />
+          <Image 
+            src={character.image_character.url}
+            width={character.image_character.dimensions.width}
+            height={character.image_character.dimensions.height}
+            alt='Character Image' />
         </div>
         <div className="info">
           <span>A História</span>
           <div>
-            <h1>T’Challa Senhor das Estrelas</h1>
+            <h1>{character.name_character}</h1>
             <p>
-              Nulla eu sapien ante. Praesent convallis posuere rhoncus. 
-              Aliquam aliquet ut odio ac lobortis. Vestibulum ante ipsum primis 
-              in faucibus orci luctus et ultrices posuere cubilia curae; 
-              Aliquam erat volutpat. Aenean facilisis diam quis nunc tempus,
-              in placerat sem tincidunt. Sed id aliquet neque, quis varius ligula.
+              {character.description_character[0].text}
             </p>
           </div>
         </div>  

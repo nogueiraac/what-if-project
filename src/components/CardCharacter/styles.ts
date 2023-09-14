@@ -25,8 +25,8 @@ export const StyledCardCharacter = styled("div", {
     borderRadius: 5,
     overflow: 'hidden',
     img: {
-      width: '100% !important',
-      height: '100% !important',
+      width: 'auto',
+      height: 'auto',
       objectFit: 'cover',
       transition: 'transform .3s ease'
     }
